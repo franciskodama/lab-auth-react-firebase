@@ -1,0 +1,9 @@
+.error {
+  background-color: tomato;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  max-width: 400px;
+  margin-bottom: 18px;
+}
