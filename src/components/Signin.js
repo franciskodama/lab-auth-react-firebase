@@ -6,10 +6,10 @@ const Signin = () => {
     const emailRef = useRef()
     const passwordRef = useRef()
 
-    const { signInUser, forgotPassword } = useUserContext()
+    const { signInUser, error, forgotPassword } = useUserContext()
 
     const handleSubmit = (e) => {
-        e.prevent.Default()
+        e.preventDefault()
         const email = emailRef.current.value 
         const password = passwordRef.current.value 
         if (email && password) signInUser(email, password);
@@ -27,7 +27,7 @@ const Signin = () => {
     <>
         <Card>
             <Card.Body>
-                <h2 className="text-center mb-4"> Login </h2>
+                <h2 className='text-center mb-4'> Login </h2>
                 <Form onSubmit={handleSubmit}>
 
                     <Form.Group id='email'>
@@ -40,11 +40,11 @@ const Signin = () => {
                         <Form.Control type='password' ref={passwordRef} required />
                     </Form.Group>
 
-                <Button className="w-100" type='submit'>
+                <Button className='w-100' type='submit'>
                     Sign In
                     </Button>
 
-                <p className="w-100 text-center mt-2" onClick={forgotPasswordHandler}>Forgot Password?</p>
+                <p className='w-100 text-center mt-2' onClick={forgotPasswordHandler}>Forgot Password?</p>
                 </Form>
             </Card.Body>
         </Card>

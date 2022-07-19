@@ -9,7 +9,6 @@ import {
 } from 'firebase/auth'
 import { auth } from '../firebase'
 
-
 const AuthContext = createContext({})
 export const useUserContext = () => useContext(AuthContext)
 
@@ -29,7 +28,7 @@ const AuthProvider = ({children}) => {
       return unsubscribe
     }, [])
 
-    const signUpUser = (email, password, name) => {
+    const signUpUser = (name, email, password) => {
         setLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
         .then(() => {
@@ -44,9 +43,9 @@ const AuthProvider = ({children}) => {
     const signInUser = (email, password) => {
       setLoading(true)
       signInWithEmailAndPassword(auth, email, password)
-        .then((res) => console.log(res))
-        .catch((err) => setError(err))
-        .finally(() => setLoading(false))
+      .then((res) => console.log(res))
+      .catch((err) => setError(err.code))
+      .finally(() => setLoading(false));
     }
 
     const logOutUser = () => {

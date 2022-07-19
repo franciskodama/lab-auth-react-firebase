@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { Card, Button, Form } from 'react-bootstrap'
+import React, { useRef, useState } from 'react'
+import { Card, Button, Form, Alert } from 'react-bootstrap'
 import { useUserContext } from '../contexts/AuthContext'
 
 const Signup = () => {
@@ -8,44 +8,32 @@ const Signup = () => {
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
 
-    const { signUpUser } = useUserContext()
+    const [ messagePasswordError, setMessagePasswordError ] = useState('')
 
-    // const { signup } = useAuth()
-    // const [ error, setError ] = useState('')
-    // const [ loading, setLoading ] = useState(false)
+    const { signUpUser } = useUserContext()
 
     const handleSubmit = (e) => {
         e.preventDefault()
         const email = emailRef.current.value
         const name = nameRef.current.value
         const password = passwordRef.current.value
-        // const passwordConfirm = passwordConfirmRef.current.value
+        const passwordConfirm = passwordConfirmRef.current.value
 
-        // if(password !== passwordConfirm) {
-        //     return setError('Passwords do not match')
-        // } 
+        if(password !== passwordConfirm) {
+            return setMessagePasswordError('Passwords do not match')
+        } 
         
-        if(email && name && password) {
-            signUpUser(email, name, password)
+        if(name && email && password) {
+            signUpUser(name, email, password)
         }
-
-        // }
-        // try {
-        //     setError('')
-        //     setLoading(true)
-        //     await signup(emailRef.current.value, passwordRef.current.value)
-        // } catch {
-        //     setError('Failed to create an account')
-        // }
-        // setLoading(false)
     }
 
   return (
     <>
      <Card>
         <Card.Body>
-            <h2 className="text-center mb-4">Sign Up</h2>
-            {/* {error && <Alert variant="danger">{error}</Alert>} */}
+            <h2 className='text-center mb-4'>Sign Up</h2>
+            {messagePasswordError && <p className='error'>{messagePasswordError}</p>}
             <Form onSubmit={handleSubmit}>
                 
                 <Form.Group id='name'>
@@ -70,16 +58,13 @@ const Signup = () => {
                 
                 <Button 
                 // disabled={loading} 
-                className="w-100" type='submit' >
+                className='w-100' type='submit' >
                     Sign Up
                 </Button>
 
             </Form>
         </Card.Body>
      </Card>
-        {/* <div className="w-100 text-center mt-2">
-            Already have an account? Log In.
-        </div> */}
     </>
   )
 }

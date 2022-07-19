@@ -1,15 +1,20 @@
-import React from "react";
+import React from 'react';
+import { Card, Button } from 'react-bootstrap'
 import { useUserContext } from '../contexts/AuthContext'
 
 const Dashboard = () => {
+
   const { currentUser, logOutUser } = useUserContext();
+  
   return (
-    <div>
-      <h1>Dashboard </h1>
-      <h2>Name : {currentUser.displayName}</h2>
-      <h2>Email : {currentUser.email}</h2>
-      <button onClick={logOutUser}>Log out</button>
-    </div>
+    <Card>
+    <Card.Body>
+        <h1 className='text-center mb-4'>Dashboard </h1>
+        <h3 className='mb-2'>Name : {currentUser.displayName}</h3>
+        <h3 className='mb-6'>Email : {currentUser.email}</h3>
+        <Button className='w-100' onClick={logOutUser}>Log out</Button>
+      </Card.Body>
+     </Card>
   );
 };
 
