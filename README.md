@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+### Hi there! I'm Francis Kodama! 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## WELCOME TO LAB SPACE | Auth with Firebase V9 in React.js 🧪
 
-## Available Scripts
+<hr />
 
-In the project directory, you can run:
+# this.Project 📖
 
-### `npm start`
+The idea here it's to create an Auth using Firebase V9 in React.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Why?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The process of learning, practicing and testing it in preparation for its eventual use. :)
 
-### `npm test`
+</br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How?
 
-### `npm run build`
+- React.js
+- Firebase V9
+- HTML
+- CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<hr />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# About Me 😎
 
-### `npm run eject`
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🇧🇷 I’m a **Front-end Developer** with a strong understanding of industry trends, as well as of the entire web development process, including development, UX/UI design, product management, and client services.
+</br>
+</br>
+🚀 My mission is to create exciting projects that will inspire others and change their behavior in a positive way while providing me with new challenges so I never stop learning.
+</br>
+</br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://www.fkodama.com/" target="_blank">
+<img align="left" width="196px" src="https://www.fkodama.com/_permanent/git/portfolio.svg"  />
+</a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</br>
+</br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<hr />
 
-## Learn More
+### ⚡ Connect with me:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br />
+<a href="https://www.fkodama.com/" target="_blank">
+<img align="left" width="40px" src="https://www.fkodama.com/_permanent/git/website.svg"  />
+</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<a href="https://www.linkedin.com/in/kodama/" target="_blank">
+  <img align="left" width="40px" src="https://www.fkodama.com/_permanent/git/linkedin.svg"  />
+</a>
+<a href="https://www.instagram.com" target="_blank">
+  <img align="left" width="40px" src="https://www.fkodama.com/_permanent/git/instagram.svg"  />
+</a>
+<a href="mailto:fk@fkodama.com">
+  <img align="left" width="43px" src="https://www.fkodama.com/_permanent/git/email.svg" />
+</a>
 
-### Code Splitting
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<hr />
